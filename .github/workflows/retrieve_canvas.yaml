@@ -18,8 +18,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name '${{ env.CI_COMMIT_AUTHOR }}'
-          git config --global user.email '${{ env.CI_COMMIT_EMAIL }}'
+          git config --global user.name 'atcelen'
+          git config --global user.email 'atcelen@student.ethz.ch'
           git add .
           git commit -m 'Automated update of static files'
           git push
