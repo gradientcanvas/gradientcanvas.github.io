@@ -16,6 +16,8 @@ jobs:
 
       - name: Update static files
         run: |
+          cd assets
+          wget https://gr-spaces.zhizhuo.uk/files/history/record.json -O record.json
           python3 update_static_files.py
 
       - name: Commit and push changes
